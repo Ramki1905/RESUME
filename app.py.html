@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>app.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+app.py</font>
+</center></td></tr></table>
+<pre><span class="s0">from </span><span class="s1">flask </span><span class="s0">import </span><span class="s1">flask</span><span class="s0">,</span><span class="s1">render template</span><span class="s0">,</span><span class="s1">request</span><span class="s0">,</span><span class="s1">redirect</span><span class="s0">,</span><span class="s1">url </span><span class="s0">for</span>
+    <span class="s1">app= flask(__name__)</span>
+    <span class="s1">@app.route(</span><span class="s2">'/signup'</span><span class="s0">,</span><span class="s1">methods=[</span><span class="s2">'GET'</span><span class="s0">,</span><span class="s2">'POST'</span><span class="s1">])</span>
+    <span class="s0">def </span><span class="s1">signup():</span>
+        <span class="s0">if </span><span class="s1">request.method==</span><span class="s2">'GET'</span><span class="s1">:</span>
+            <span class="s0">return </span><span class="s1">render template(</span><span class="s2">'signup.html'</span><span class="s1">)</span>
+            <span class="s1">if__name__==</span><span class="s2">'__main__'</span><span class="s1">:</span>
+            <span class="s1">app.run(port=</span><span class="s3">5001</span><span class="s0">,</span><span class="s1">debug=true)</span></pre>
+</body>
+</html>
