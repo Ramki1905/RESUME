@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<table class="table mt-4">
+    <thead>
+        <tr class="table-sucess">
+            <th> name</th>
+            <th>status</th>
+            <th>price</th>
+            <th>category</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in users %}
+        <tr>
+            <td> {{row.1}}</td>
+            <td> {{row.1}}</td>
+            <td> {{row.1}}</td>
+        </tr>
+        {% end for % }
+    </tbody>
+</table>
+<body>
+    <form method="post">
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td >PRODUCT DETAILS</td>
+                    </tr>
+                    <tr >
+                        <td style="padding: 15px;"> PRODUCTID</td>
+                    
+                        <td> <input type="text" name="productid">  </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px;">PRODUCTNAME</td>
+                    
+                        <td> <input type="text" name="productname"> </td>
+                    </tr>
+                    <tr>
+                        <td> <input type="submit" value="viewproduct" style=" background-color:rgb(255, 242, 0); width: 160px ;"></td>
+                    </tr>
+                </table>    
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
